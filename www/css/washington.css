@@ -194,8 +194,11 @@ a {
   border-left: 3px solid transparent;
   background-color: #f7f7f7;
 }
-.list-item.highlighted {
+.list-item.highlighted_completed {
   border-left: 3px solid #4fd2c2;
+}
+.list-item.highlighted {
+  border-left: 3px dashed #4fd2c2;
 }
 .icon-list {
   display: inline-block;
@@ -213,12 +216,13 @@ a {
 .title-list {
   display: inline-block;
   float: left;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 60px;
 }
 .highlighted {
   color: #c2c2c2;
 }
+
 .nav-menu {
   position: absolute;
   width: 90%;
