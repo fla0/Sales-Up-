@@ -318,6 +318,20 @@ a {
 .logo-login.bigger {
   height: 304px;
 }
+.logo-profile {
+  height: 211px;
+  background-image: url('../images/profile.png');
+  background-position: 50% 50%;
+  background-size: 204px;
+  background-repeat: no-repeat;
+}
+.logo-profile.smaller {
+  height: 97px;
+  background-size: 100px;
+}
+.logo-profile.bigger {
+  height: 304px;
+}
 .bottom-section {
   position: absolute;
   left: 0px;
@@ -639,20 +653,20 @@ a {
   display: block;
   float: left;
   width: 50%;
-  padding-top: 22px;
+  padding-top: 2px;
   padding-bottom: 9px;
-  border-bottom: 3px solid white;
+  border-top: 3px solid white;
   background-color: white;
   font-size: 10px;
   text-align: center;
   text-decoration: none;
 }
 .toolbar-top-button.w--current {
-  border-bottom-color: #4fd2c2;
+  border-top-color: #4fd2c2;
   background-color: white;
 }
 .tabs-content {
-  background-color: whitesmoke;
+  background-color: white;
   clear: both;
 }
 .group-block {
@@ -698,9 +712,9 @@ a {
   line-height: 68px;
 }
 .tab-pane {
-  padding-right: 10px;
+  padding-right: 0px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 .list-news {
   display: inline-block;
@@ -735,8 +749,8 @@ a {
   border-width: 0px;
 }
 .title-new {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 1.6em;

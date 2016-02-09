@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.smarthome"
+        id        = "com.phonegap.salesup"
         version   = "1.0.0">
 
-    <name>Smart Home</name>
+    <name>Sales Up!</name>
 
     <description>
-        Smart Home app.
+        Sales app.
     </description>
 
     <author href="http://phonegap.com" email="mk@cubesolutions.ru">

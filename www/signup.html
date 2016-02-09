@@ -26,7 +26,7 @@
 <body>
   <section class="w-section mobile-wrapper">
 
-    <div class="page-content" id="main-stack" data-scroll="0">
+    <div class="page-content" id="main-stack">
       <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
         <div class="w-container">
           <div class="wrapper-mask" data-ix="menu-mask"></div>
@@ -38,7 +38,7 @@
       </div>
       <div class="body padding">
         <div class="logo-login smaller"></div>
-        <div class="bottom-section padding">
+        
           <div class="w-form">
             <form id="submit-form" name="email-form" data-name="Email Form" data-redirect="settings.html" action="#">
               <div>
@@ -47,22 +47,22 @@
                 <div class="separator-fields"></div>
               </div>
               <div>
-                <label class="label-form" for="email-field">EMAIL</label>
+                <label class="label-form" for="email-field">CORPORATE E-MAIL</label>
                 <input class="w-input input-form" id="email-field" type="email" name="email" data-name="email" required="required">
                 <div class="separator-fields"></div>
               </div>
               <div>
-                <label class="label-form" for="password-ield">PASSWORD</label>
+                <label class="label-form" for="birthday-field">POS IDENTIFIER</label>
+                <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required">
+              </div>
+              <div>
+                <label class="label-form" for="password-ield">YOUR PASSWORD</label>
                 <input class="w-input input-form" id="password-ield" type="password" name="password" data-name="password" required="required">
                 <div class="separator-fields"></div>
               </div>
-              <div>
-                <label class="label-form" for="birthday-field">BIRTHDAY</label>
-                <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required">
-              </div>
               <div class="separator-button-input"></div>
               <input class="w-button action-button" type="submit" value="Sign Up" data-wait="Please wait...">
-              <div class="separator-button"></div><a class="link-upper" href="login.html" data-load="1">ALREADY HAVE AN ACCOUNT? <strong class="b-link">SIGN IN</strong></a>
+              
             </form>
             <div class="w-form-done">
               <p>Thank you! Your submission has been received!</p>
@@ -71,7 +71,7 @@
               <p>Oops! Something went wrong while submitting the form</p>
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
     <div class="page-content loading-mask" id="new-stack">
