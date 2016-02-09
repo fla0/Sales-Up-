@@ -1,0 +1,348 @@
+/*------------------------------------------------------------------
+Pages v1.1.0
+Theme : Default
+Generated From LESS
+[Table of contents]
+
+
+[17. Charts]
+*/
+.line-chart .nvd3 line.nv-guideline {
+  /* Vertical bar on hover in interactive chart */
+  stroke-width: 30px;
+  stroke-opacity: .04;
+  stroke: #000;
+}
+.line-chart .nvd3 .nv-groups path.nv-area {
+  /*  filled area */
+  fill-opacity: .1;
+}
+.line-chart .nvd3 .nv-groups path.nv-line {
+  /*  Line */
+  stroke-opacity: .3;
+}
+.line-chart .nvd3 .nv-axis line {
+  /*  grid lines */
+  stroke-opacity: .5;
+}
+.line-chart[data-x-grid="false"] .nv-x .tick line {
+  display: none;
+}
+.line-chart[data-y-grid="false"] .nv-y .tick line {
+  display: none;
+}
+.line-chart .domain {
+  /* domain */
+  opacity: 0;
+}
+.line-chart[data-points="true"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  /* Toggle points */
+  fill-opacity: 1;
+  stroke-opacity: .5;
+}
+.line-chart .nvtooltip table td.legend-color-guide div {
+  border-radius: 100px;
+}
+.line-chart thead .nv-pointer-events-none strong {
+  color: #afafaf;
+}
+.line-chart .nv-pointer-events-none {
+  font-size: 12px;
+}
+.line-chart .nv-pointer-events-none .value.nv-pointer-events-none {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 11px;
+  color: #afafaf;
+}
+.line-chart .nvtooltip table {
+  margin: 12px 10px 14px 15px;
+}
+.line-chart .nvtooltip.xy-tooltip.nv-pointer-events-none {
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.line-chart[data-stroke-width="1"] .nvd3 .nv-groups path.nv-line {
+  /* Line widths */
+  stroke-width: 1px;
+}
+.line-chart[data-stroke-width="1"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  /* Line widths */
+  stroke-width: 2px;
+}
+.line-chart[data-stroke-width="2"] .nvd3 .nv-groups path.nv-line {
+  stroke-width: 2px;
+}
+.line-chart[data-stroke-width="2"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke-width: 3px;
+}
+.line-chart[data-stroke-width="3"] .nvd3 .nv-groups path.nv-line {
+  stroke-width: 3px;
+}
+.line-chart[data-stroke-width="3"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke-width: 4px;
+}
+.line-chart .tick text,
+.line-chart .nvd3 .nv-axis .nv-axisMaxMin text {
+  fill: rgba(98, 98, 98, 0.5);
+  font-family: "Montserrat";
+  font-size: 7px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.line-chart .nvd3.nv-scatter .nv-groups .nv-point.hover,
+.line-chart .nvd3 .nv-groups .nv-point.hover {
+  fill: inherit !important;
+  stroke: inherit !important;
+}
+/* Line widths
+------------------------------------
+*/
+.line-chart[data-line-color="master"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="master"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="master"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #626262;
+}
+.line-chart[data-line-color="success"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="success"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="success"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #10cfbd;
+}
+.line-chart[data-line-color="primary"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="primary"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="primary"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #6d5cae;
+}
+.line-chart[data-line-color="info"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="info"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="info"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #3b4752;
+}
+.line-chart[data-line-color="complete"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="complete"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="complete"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #48b0f7;
+}
+.line-chart[data-line-color="warning"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="warning"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="warning"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #f8d053;
+}
+.line-chart[data-line-color="danger"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="danger"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="danger"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #f55753;
+}
+.line-chart[data-line-color="white"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="white"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="white"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #fff;
+}
+.line-chart[data-line-color="black"] .nvd3 line.nv-guideline,
+.line-chart[data-line-color="black"] .nvd3 .nv-groups path.nv-line,
+.line-chart[data-line-color="black"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  stroke: #000;
+}
+/* Area Fill colors
+------------------------------------
+*/
+.line-chart[data-area-color="master"] .nvd3 .nv-groups path.nv-area {
+  fill: #626262;
+}
+.line-chart[data-area-color="success"] .nvd3 .nv-groups path.nv-area {
+  fill: #10cfbd;
+}
+.line-chart[data-area-color="info"] .nvd3 .nv-groups path.nv-area {
+  fill: #3b4752;
+}
+.line-chart[data-area-color="complete"] .nvd3 .nv-groups path.nv-area {
+  fill: #48b0f7;
+}
+.line-chart[data-area-color="primary"] .nvd3 .nv-groups path.nv-area {
+  fill: #6d5cae;
+}
+.line-chart[data-area-color="warning"] .nvd3 .nv-groups path.nv-area {
+  fill: #f8d053;
+}
+.line-chart[data-area-color="danger"] .nvd3 .nv-groups path.nv-area {
+  fill: #f55753;
+}
+.line-chart[data-area-color="white"] .nvd3 .nv-groups path.nv-area {
+  fill: #fff;
+}
+.line-chart[data-area-color="black"] .nvd3 .nv-groups path.nv-area {
+  fill: #000;
+}
+/* Point fill colors
+------------------------------------
+*/
+.line-chart[data-point-color="master"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #626262;
+}
+.line-chart[data-point-color="success"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #10cfbd;
+}
+.line-chart[data-point-color="info"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #3b4752;
+}
+.line-chart[data-point-color="complete"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #48b0f7;
+}
+.line-chart[data-point-color="primary"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #6d5cae;
+}
+.line-chart[data-point-color="warning"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #f8d053;
+}
+.line-chart[data-point-color="danger"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #f55753;
+}
+.line-chart[data-point-color="white"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill: #fff;
+}
+#nvd3-line svg,
+#nvd3-line2 svg,
+#nvd3-area svg {
+  height: 500px;
+}
+/* Rickshaw Charts
+------------------------------------
+*/
+.rickshaw-chart.rickshaw_graph .detail {
+  padding-left: 15px;
+  transform: translateX(-15px);
+  width: 30px;
+  background: rgba(0, 0, 0, 0.04);
+  right: -15px;
+}
+.rickshaw-chart.rickshaw_graph .detail .item,
+.rickshaw-chart.rickshaw_graph .detail .x_label {
+  transform: translateX(15px);
+}
+.rickshaw-chart.rickshaw_graph .detail:after {
+  content: "";
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: block;
+}
+.rickshaw-chart .y_grid .tick.major line {
+  stroke-dasharray: 3px, 5px;
+  opacity: .7;
+}
+.rickshaw-chart.rickshaw_graph .detail .x_label {
+  display: none;
+}
+.rickshaw-chart.rickshaw_graph .detail .item {
+  line-height: 1.4;
+  padding: 0.5em;
+}
+.rickshaw-chart.rickshaw_graph .detail_swatch {
+  float: right;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px 0 0;
+}
+.rickshaw-chart.rickshaw_graph .detail .date {
+  font-size: 11px;
+  color: #a0a0a0;
+  opacity: .5;
+}
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis {
+  position: absolute;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  width: 40px;
+  left: 0;
+  z-index: 1;
+}
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .y_ticks path,
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .x_ticks_d3 path {
+  fill: none;
+  stroke: none;
+}
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .y_ticks text,
+#tab-rickshaw-realtime #rickshaw-realtime_y_axis .rickshaw_graph .x_ticks_d3 text {
+  opacity: 0.35;
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .dot {
+  border-radius: 50px;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .x_label {
+  display: none;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .item {
+  line-height: 1.4;
+  padding: 0.5em;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars .detail_swatch {
+  float: right;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px 0 0;
+}
+#tab-rickshaw-bars #rickshaw-stacked-bars.rickshaw_graph .detail .date {
+  font-size: 11px;
+  color: #a0a0a0;
+  opacity: .5;
+}
+#tab-rickshaw-slider #rickshaw-slider {
+  height: 500px;
+}
+#tab-rickshaw-slider .rickshaw_graph .x_grid_d3 .tick {
+  stroke-opacity: 0;
+}
+#tab-rickshaw-slider .rickshaw_graph .y_ticks path,
+#tab-rickshaw-slider .rickshaw_graph .x_ticks_d3 path {
+  stroke: none;
+}
+#tab-rickshaw-slider .rickshaw_graph .y_ticks text,
+#tab-rickshaw-slider .rickshaw_graph .x_ticks_d3 text {
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+#tab-rickshaw-slider .rickshaw_range_slider_preview .frame {
+  opacity: 0;
+}
+#tab-rickshaw-slider .rickshaw_range_slider_preview .left_handle,
+#tab-rickshaw-slider .rickshaw_range_slider_preview .right_handle {
+  fill: #000;
+  fill-opacity: 0.1 !important;
+}
+#tab-rickshaw-slider .slider {
+  position: absolute;
+  top: 0;
+  height: 93px;
+  overflow: hidden;
+}
+#tab-rickshaw-slider .chart {
+  position: absolute;
+  bottom: 40px;
+  top: 150px;
+  left: 33px;
+  right: 0;
+  width: auto;
+}
+#tab-rickshaw-slider .chart .x_tick.plain .title {
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+#tab-rickshaw-slider .y_axis {
+  bottom: 0;
+  position: absolute;
+  top: 150px;
+  width: 40px;
+  left: -6px;
+}
+#tab-rickshaw-slider .rickshaw_graph .x_tick {
+  border-color: transparent;
+}
+#tab-rickshaw-slider .rickshaw_graph .x_tick .title {
+  bottom: -24px;
+  left: -15px;
+}
