@@ -213,6 +213,9 @@ a {
 .icon-list.highlighted {
   color: #4fd2c2;
 }
+.icon-list.highlighted_red {
+  color: #eb4889;
+}
 .title-list {
   display: inline-block;
   float: left;
