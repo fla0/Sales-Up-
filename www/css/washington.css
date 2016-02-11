@@ -740,6 +740,14 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.signature {
+  position: relative;
+  height: 70px;
+  background-image: url('../images/signature.png');
+  background-position: 50% 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .image-new.bg1 {
   background-image: url('../images/photo-1413977886085-3bbbf9a7cf6e.jpg');
 }
