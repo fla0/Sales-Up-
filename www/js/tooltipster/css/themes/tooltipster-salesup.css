@@ -1,5 +1,5 @@
 .tooltipster-salesup {
-	border-radius: 15px; 
+	border-radius: 10px; 
 	border-bottom: 3px solid #eb4889;
 	background: #eb4889;
 	color: #fff;
@@ -8,6 +8,6 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
 	font-weight: bold;
-	line-height: 16px;
-	padding: 3px 7px;
+	line-height: 26px;
+	padding: 3px 40px;
 }
