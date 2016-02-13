@@ -13,6 +13,10 @@
   <link href="js/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/pages.css" rel="stylesheet" type="text/css" />
   <script src="js/webfont.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="js/tooltipster/css/tooltipster.css" />
+  <link rel="stylesheet" type="text/css" href="js/tooltipster/css/themes/tooltipster-salesup.css" />
+
   <script>
 	WebFont.load({
 	  google: {
@@ -111,7 +115,7 @@
 					<label class="label-form" for="full-name-field">NEW</label>
 					<ul class="list" style="padding-top: 3%">
 						<li class="list-item highlighted" data-ix="list-item">
-				            <a class="w-clearfix w-inline-block" href="#">
+				            <a class="w-clearfix w-inline-block tooltip" href="#" title="ACTIVATE" id="newchallenge">
 				              <div class="icon-list ">
 				                <div class="ion-ios-stopwatch-outline"></div>
 				              </div>
@@ -169,7 +173,7 @@
   <script type="text/javascript" src="js/framework.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
    <script type="text/javascript" src="js/moment.min.js"></script>
-
+<script type="text/javascript" src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
    <script src="js/nvd3/lib/d3.v3.js" type="text/javascript"></script>
 	<script src="js/nvd3/nv.d3.min.js" type="text/javascript"></script>
 	<script src="js/nvd3/src/utils.js" type="text/javascript"></script>
@@ -179,5 +183,20 @@
 	<script src="js/nvd3/src/models/line.js" type="text/javascript"></script>
 	<script src="js/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
   <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+  
+  <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+	               animation: 'grow',
+				   delay: 100,
+				   theme: 'tooltipster-salesup',
+				   trigger: 'click',
+				   autoClose: true,
+				   interactive: true,
+				   onlyOne: true
+	            });
+        });
+    </script>
+    
 </body>
 </html>
