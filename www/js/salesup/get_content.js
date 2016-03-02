@@ -1,7 +1,7 @@
 function get_content() {
 	ajaxObj = {  
 			type: "GET",
-			url: "http://localhost:8080/salesup/api/v1/content/?uuid=14565715370111234&company=bank", 
+			url: "http://194.177.22.217:8080/salesup/api/v1/content/?uuid=14565715370111234&company=bank", 
 			contentType:"application/json",
 			response:'text',
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -118,7 +118,7 @@ function activate(challenge)
 function update_chart_days(){
 		ajaxObj = {  
 			type: "GET",
-			url: "http://localhost:8080/salesup/api/v1/performance/?uuid=14565715370111234&company=bank", 
+			url: "http://194.177.22.217:8080/salesup/api/v1/performance/?uuid=14565715370111234&company=bank", 
 			contentType:"application/json",
 			response:'text',
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -186,7 +186,7 @@ function accept_challenge(challenge) {
 		
 	ajaxObj = {  
 			type: "POST",
-			url: "http://localhost:8080/salesup/api/v1/challenges/update", 
+			url: "http://194.177.22.217:8080/salesup/api/v1/challenges/update", 
 			contentType:"application/json",
 			response:'text',
 			data: "{\"uuid\":\"14565715370111234\",\"company\":\"bank\",\"status\":\"accepted\",\"challenge\":\""+challenge+"\"}",
