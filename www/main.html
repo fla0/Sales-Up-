@@ -12,8 +12,8 @@
   <link href="js/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/pages.css" rel="stylesheet" type="text/css" />
   <script src="js/webfont.js"></script>
-  
-    <link rel="stylesheet" type="text/css" href="js/tooltipster/css/tooltipster.css" />
+ 
+  <link rel="stylesheet" type="text/css" href="js/tooltipster/css/tooltipster.css" />
   <link rel="stylesheet" type="text/css" href="js/tooltipster/css/themes/tooltipster-salesup.css" />
   
   <script>
@@ -111,25 +111,25 @@
       <div class="body padding">
 	      <div class="w-row">
 		      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-		      		<h2 align="center" style="padding-top: 35%">#6</h2>
+		      		<h2 align="center" style="padding-top: 35%" id="rank_top">#6</h2>
 		      		<p class="description-new" align="center">in TOP 10</p>
 		      </div>
 		      <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
 		      		<div class="logo-profile smaller" align="center"></div>
 		      </div>
 		     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-		      		<h2 align="center" style="padding-top: 35%">#1</h2>
+		      		<h2 align="center" style="padding-top: 35%" id="rank_region">#1</h2>
 		      		<p class="description-new" align="center">in region</p>
 		      </div>
 	      </div>
-	      <h2 class="title-new" align="center">Max Kornev</h2>
+	      <h2 class="title-new" align="center" id="name_surname">Max Kornev</h2>
 
               <div class="separator-button"></div>
-              <h2 class="grey-heading-title" align="center">Hello world!</h2> 
+              <h2 class="grey-heading-title" align="center" id="message" style="line-height: 1.5">Hello world!</h2> 
         <div class="separator-button"></div>
         <div>
               		<label class="label-form" for="full-name-field">YOUR PERFORMANCE</label>
-			  			<a class="category-link" onclick="refresh_day()">DAY</a>
+			  			<a class="category-link" onclick="update_chart_days()">DAY</a>
 			  			<a class="category-link" onclick="refresh_mon()">MON</a>
 			  			<a class="category-link" onclick="refresh_qtr()">QTR</a>
 			  			<div class="panel-body">
@@ -141,52 +141,26 @@
                      			</div>
               <div class="w-row">
 		      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-		      		<p align="center">AMT: 10,500$</p>
+		      		<p align="center" id="amt">AMT: –</p>
 		      </div>
 		     <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-		      		<p  align="center">QTY: 150</p>
+		      		<p  align="center" id="qty">QTY: –</p>
 		      </div>
 	      </div>
 	        <div>
 		        <div class="separator-fields"></div>
 					<label class="label-form" for="full-name-field">CHALLENGES</label>
-					<ul class="list" style="padding-top: 3%">
-						<li class="list-item highlighted" data-ix="list-item">
-				            <a class="w-clearfix w-inline-block tooltip" href="#" title="ACTIVATE" id="newchallenge">
-				              <div class="icon-list ">
-				                <div class="icon ion-ios-information-empty"></div>
-				              </div>
-				              <div style="font-size: 12px; padding-top: 3%">Make +6 sales today to get +1% for your monthly bonus!</div>
-				            </a>
-				          </li>
-				                    <li class="list-item highlighted_completed" data-ix="list-item">
-							            <a class="w-clearfix w-inline-block highlighted" href="#">
-							              <div class="icon-list highlighted">
-							                <div class="icon ion-ios-checkmark-empty"></div>
-							              </div>
-							              <div style="font-size: 12px; padding-top: 3%" >Make 5 sales in one hour to get extra 10$</div>
-							            </a>
-							          </li>
-					</ul>
+					<div class="w-row tooltip" style="padding-top: 2%" id="challenges">
+						
+					</div>
             </div>
             <div class="separator-fields"></div>
             <div>
 		        <div class="separator-fields"></div>
 				<label class="label-form" for="full-name-field">LAST BADGES</label>
-				 <div class="w-row">
-		      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-		      		<img src="images/badges/badge1.png" style="width:auto; height:auto; padding-top: 10%; padding-left: 10px; padding-right: 10px">
-		      </div>
-		      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-		      		<img src="images/badges/badge2.png" style="width:auto; height:auto; padding-top: 10%; padding-left: 10px; padding-right: 10px">
-		      </div>
-		      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-		      		<img src="images/badges/badge3.png" style="width:auto; height:auto; padding-top: 10%; padding-left: 10px; padding-right: 10px">
-		      </div>
-		      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-		      		<img src="images/badges/badge4.png" style="width:auto; height:auto; padding-top: 10%; padding-left: 10px; padding-right: 10px">
-		      </div>
-	      </div>
+				 <div class="w-row" style="padding-top: 2%" id="achievements">
+
+	      		</div>
             </div>
             <div class="separator-fields"></div>
             </div>
@@ -204,7 +178,7 @@
   <script type="text/javascript" src="js/framework.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
    <script type="text/javascript" src="js/moment.min.js"></script>
-   <script type="text/javascript" src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
+   
    <script src="js/nvd3/lib/d3.v3.js" type="text/javascript"></script>
     <script src="js/nvd3/nv.d3.min.js" type="text/javascript"></script>
     <script src="js/nvd3/src/utils.js" type="text/javascript"></script>
@@ -213,39 +187,41 @@
     <script src="js/nvd3/src/models/axis.js" type="text/javascript"></script>
     <script src="js/nvd3/src/models/line.js" type="text/javascript"></script>
     <script src="js/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
-   <script type='text/javascript'>
-function refresh_day(){
-		var chart;
+    
+    <script type="text/javascript" src="js/salesup/get_content.js"></script>
+    
+<script type='text/javascript'>
+var chart;
 		var ticks = [];
-		var data = [{key: "Registrations per last 7 days", values:
+		var data = [{key: "Performance", values:
 		[
 	        {
 			"x": 1,
-			"y": 5
+			"y": 0
 			},
 			{
 			"x": 2,
-			"y": 14
+			"y": 0
 			},
 			{
 			"x": 3,
-			"y": 7
+			"y": 0
 			},
 			{
 			"x": 4,
-			"y": 10
+			"y": 0
 			},
 			{
 			"x": 5,
-			"y": 8
+			"y": 0
 			},
 			{
 			"x": 6,
-			"y": 14
+			"y": 0
 			},
 			{
 			"x": 7,
-			"y": 11
+			"y": 0
 			}
 	    ],"area": true }];
 	    
@@ -260,7 +236,7 @@ function refresh_day(){
             .color(["4fd2c2"])
             .forceY([0, 2])
             .useInteractiveGuideline(false)
-                .transitionDuration(350)
+         //       .transitionDuration(300)
             .showYAxis(false)
             .showXAxis(true)
                 
@@ -295,18 +271,17 @@ function refresh_day(){
 
         return chart;
     });
-}
 </script>
 
 <script type='text/javascript'> 
-	window.onload = refresh_day();
+	window.onload = get_content();
 </script>
 
 <script type='text/javascript'> 
 function refresh_mon(){
 		var chart;
 		var ticks = [];
-		var data2 = [{key: "Registrations per last 7 days", values:
+		var data2 = [{key: "Performance", values:
 		[
 	        {
 			"x": 1,
@@ -341,7 +316,7 @@ function refresh_mon(){
             .color(["4fd2c2"])
             .forceY([0, 2])
             .useInteractiveGuideline(false)
-                .transitionDuration(350)
+          //      .transitionDuration(300)
             .showYAxis(false)
             .showXAxis(true)
                 
@@ -379,7 +354,7 @@ function refresh_mon(){
 function refresh_qtr(){
 		var chart;
 		var ticks = [];
-		var data3 = [{key: "Registrations per last 7 days", values:
+		var data3 = [{key: "Performance", values:
 		[
 	        {
 			"x": 1,
@@ -410,7 +385,7 @@ function refresh_qtr(){
             .color(["4fd2c2"])
             .forceY([0, 2])
             .useInteractiveGuideline(false)
-                .transitionDuration(350)
+             //   .transitionDuration(300)
             .showYAxis(false)
             .showXAxis(true)
                 
@@ -439,7 +414,8 @@ function refresh_qtr(){
 </script>
   <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
     
-  <script>
+<script type="text/javascript" src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
+    <script>
         $(document).ready(function() {
             $('.tooltip').tooltipster({
 	               animation: 'fall',

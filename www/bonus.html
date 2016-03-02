@@ -43,49 +43,22 @@
 			      <label class="label-form" for="full-name-field">CALCULATION</label>
 			      <li class="list-item" data-ix="list-item">
 							<a class="w-clearfix w-inline-block" href="#">
-								<div class="w-row">
-								      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-								      		 <div class="icon-list highlighted">
-									  		 	<div style="font-size: 20px">Total</div>
-								 			</div>
-								      </div>
-								      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-								      		<div class="icon-list highlighted">
-									  		 	<div style="font-size: 20px" align="left">800$</div>
-								 			</div>
-								      </div>
+								<div class="w-row" id="totalbonus">
+								      
 								</div>
 							</a>
 							</li>
 						<li class="list-item" data-ix="list-item">
 							<a class="w-clearfix w-inline-block" href="#">
-								<div class="w-row">
-								      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-								      		 <div class="icon-list highlighted">
-									  		 	<div style="font-size: 20px">Regular</div>
-								 			</div>
-								      </div>
-								      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-								      		<div class="icon-list highlighted">
-									  		 	<div style="font-size: 20px" align="left">740$</div>
-								 			</div>
-								      </div>
+								<div class="w-row" id="regularbonus">
+								      
 								</div>
 							</a>
 							</li>
 						<li class="list-item" data-ix="list-item">
 							<a class="w-clearfix w-inline-block" href="#">
-								<div class="w-row">
-								      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-								      		 <div class="icon-list highlighted">
-									  		 	<div style="font-size: 20px">Challenge</div>
-								 			</div>
-								      </div>
-								      <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-								      		<div class="icon-list highlighted">
-									  		 	<div style="font-size: 20px" align="left">60$</div>
-								 			</div>
-								      </div>
+								<div class="w-row" id="challengebonus">
+								     
 								</div>
 							</a>
 							</li>
@@ -141,36 +114,9 @@
 	      <div>
 		      <div class="separator-button"></div>
 		      <label class="label-form" for="full-name-field">BENEFITS</label>
-		      <div class="w-row">
-				      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-				      		<h2 class="grey-heading-title" align="center">5  x  <img src="images/badges/badge4.png" style="width: 40%"></h2>
-				      		<a class="category-link-small" href="#">You have 5</a>
-				      </div>
-				      <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-				      		<h2 class="grey-heading-title" align="center">=</h2>
-				      </div>
-				     <div class="w-col w-col-5 w-col-small-5 w-col-tiny-5">
-				      		<h2 class="grey-heading-title" align="center">Training by VP</h2>
-				      </div>
-				      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3" style="padding-left: 5%">
-				      		<a class="category-link-highlighted" href="#">ACTIVATE</a>
-				      </div>
-		      </div>
-		      		      <div class="w-row">
-				      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
-				      		<h2 class="grey-heading-title" align="center">3  x  <img src="images/badges/badge2.png" style="width: 40%"></h2>
-				      		<a class="category-link-small" href="#">You have 2</a>
-				      </div>
-				      <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-				      		<h2 class="grey-heading-title" align="center">=</h2>
-				      </div>
-				     <div class="w-col w-col-5 w-col-small-5 w-col-tiny-5">
-				      		<h2 class="grey-heading-title" align="center">Gym (1 month)</h2>
-				      </div>
-				      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3" style="padding-left: 5%">
-				      		
-				      </div>
-		      </div>
+			  		<div class="w-row" style="padding-top: 2%" id="benefits">
+						
+					</div>
 		      <div class="separator-fields"></div>
 	      </div>
 <!--	      <div class="separator-button"></div>
@@ -196,6 +142,11 @@
   </section>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/salesup/get_bonuses.js"></script>
+  <script type='text/javascript'> 
+	window.onload = get_bonuses();
+</script>
+
   <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
 </body>
 </html>
