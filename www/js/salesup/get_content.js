@@ -59,7 +59,7 @@ function get_content() {
 									acceptedchallenges += '<div class="w-row"><div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><div class="icon-list highlighted"><div class="icon ion-ios-checkmark-empty" id='+json.challenges[i].challenge_code+'></div></div></div><div class="w-col w-col-10 w-col-small-10 w-col-tiny-10"><div style="font-size: 12px; padding-top: 3%" >'+json.challenges[i].description+'</div></div></div>';
 								} else if (json.challenges[i].status == "new")
 								{
-									newchallenges += '<div class="w-row"><div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><div class="icon-list highlighted"><div class="icon ion-ios-information-empty" ondblclick="activate('+"'"+json.challenges[i].challenge_code+"'"+'); return false;" id='+json.challenges[i].challenge_code+'></div></div></div><div class="w-col w-col-10 w-col-small-10 w-col-tiny-10"><div style="font-size: 12px; padding-top: 3%" >'+json.challenges[i].description+'</div></div></div>';
+									newchallenges += '<div class="w-row"><div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><div class="icon-list highlighted"><div class="icon ion-ios-information-empty" onclick="activate('+"'"+json.challenges[i].challenge_code+"'"+'); return false;" id='+json.challenges[i].challenge_code+'></div></div></div><div class="w-col w-col-10 w-col-small-10 w-col-tiny-10"><div style="font-size: 12px; padding-top: 3%" >'+json.challenges[i].description+'</div></div></div>';
 								}
 								
 							}
@@ -148,7 +148,7 @@ function update_chart_days(){
 									amt = amt + json.performance.day.amount[i].y;
 								}
 						}
-					 document.getElementById("amt").innerHTML = "AMT: "+ amt;
+					 document.getElementById("amt").innerHTML = "AMT: "+ amt+"$";
 						
 			           keyValue = JSON.stringify(json.performance.day.quantity);
 			           data_string = '[{ key: "Performance", values: '  + keyValue + ', "area": true }]';
