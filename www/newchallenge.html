@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New challenge</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/washington.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href="js/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/pages.css" rel="stylesheet" type="text/css" />
+  <script src="js/webfont.js"></script>
+
+  <script>
+	WebFont.load({
+	  google: {
+		families: ["Montserrat:400,700"]
+	  }
+	});
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logoStandford32.ico">
+  <link rel="apple-touch-icon" href="images/logoStandford32.ico">
+
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="w-section mobile-wrapper">
+
+	<div class="page-content" id="main-stack">
+	  <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+		<div class="w-container">
+			<nav class="w-nav-menu nav-menu" role="navigation">
+			<div class="nav-menu-header">
+				 <div class="logo">Sales Up!</div>
+				 <div class="slogan">Your personal incentive cloud</div>
+			</div>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="main.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-cloud"></div>
+				 </div>
+				 <div class="nav-menu-titles">Main</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="performance.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-stats-bars"></div>
+				 </div>
+				 <div class="nav-menu-titles">Performance</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="badges.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ribbon-b"></div>
+				 </div>
+				 <div class="nav-menu-titles">Achievements</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="bonus.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-plus"></div>
+				 </div>
+				 <div class="nav-menu-titles">Bonus</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="challenges.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-pulse-strong"></div>
+				 </div>
+				 <div class="nav-menu-titles">Challenges</div>
+				 <div class="nav-menu-text-right">2</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="todo-list.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-people"></div>
+				 </div>
+				 <div class="nav-menu-titles">Social</div>
+				 <div class="nav-menu-text-right">8</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link" href="addnew.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-gear"></div>
+				 </div>
+				 <div class="nav-menu-titles">Profile & Settings</div>
+			</a>
+			<a class="w-clearfix w-inline-block nav-menu-link last" href="terms.html" data-load="1">
+				 <div class="icon-list-menu">
+				<div class="icon ion-ios-bookmarks"></div>
+				 </div>
+				 <div class="nav-menu-titles">User guide</div>
+			</a>
+			<div class="separator-bottom"></div>
+			<div class="separator-bottom"></div>
+			<div class="separator-bottom"></div>
+			</nav>
+			<div class="wrapper-mask" data-ix="menu-mask"></div>
+			<div class="navbar-title">New challenge</div>
+			          <a class="w-inline-block navbar-button" href="main.html" data-load="1">
+            <div class="navbar-button-icon icon ion-ios-close-empty"></div>
+          </a>
+		</div>
+	  </div>
+      <div class="body padding">
+        <div class="logo-challenge smaller"></div>
+        <div class="separator-fields"></div>
+        <div class="separator-fields"></div>
+        <div class="separator-fields"></div>
+        <div class="w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" action="#">
+            <div>
+              <label class="label-form" for="full-name-field">TEMPLATE NAME</label>
+              <label class="w-input input-form" id="status-field" type="text" name="full-name" data-name="full-name" required="required" value="">Challenge template #1</label>
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+              <div class="w-clearfix input-form one-line">
+                <label class="label-form middle" for="email">CLOSED CHALLENGE</label>
+                <div class="w-clearfix radios-container">
+                  <div class="w-checkbox w-clearfix checkbox-field">
+                    <div class="checkbox-handle"></div>
+                    <input class="w-checkbox-input checkbox-input" id="checkbox" type="checkbox" name="checkbox" data-name="Checkbox" onclick="showhide();showhideparticipants()">
+                    <label class="w-form-label checkbox-label" for="checkbox"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+		      <div class="w-col w-col-5 w-col-small-5 w-col-tiny-5">
+		      		<div>
+			  			<label class="label-form" for="full-name-field">START TIME</label>
+			  			<input class="w-input input-form" id="email-field" type="email" name="email" data-name="email" required="required" value="13:00">
+			  			<div class="separator-fields"></div>
+            		</div>
+		      </div>
+		      <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2">
+		      </div>
+		      <div class="w-col w-col-5 w-col-small-5 w-col-tiny-5">
+		      		<div>
+			  			<label class="label-form" for="full-name-field">END TIME</label>
+			  			<input class="w-input input-form" id="email-field" type="email" name="email" data-name="email" required="required" value="14:00">
+			  			<div class="separator-fields"></div>
+            		</div>
+		      </div>
+            </div>
+            <div>
+              <div class="w-clearfix input-form one-line">
+                <label class="label-form middle" for="email">CHALLENGE BET</label>
+                <div class="w-clearfix radios-container">
+                  <div class="w-radio w-clearfix radio-button">
+                    <div class="radio-bullet-replacement"></div>
+                    <input class="w-radio-input radio-bullet" id="node" type="radio" name="Radio1" value="1" data-name="Radio1">
+                    <label class="w-form-label" for="node">2 $</label>
+                  </div>
+                  <div class="w-radio w-clearfix radio-button">
+                    <div class="radio-bullet-replacement checked"></div>
+                    <input class="w-radio-input radio-bullet" id="node-2" type="radio" name="Radio1" value="0" data-name="Radio1">
+                    <label class="w-form-label" for="node-2">1 $</label>
+                  </div>
+                </div>
+              </div>
+              <div class="separator-fields"></div>
+            </div>
+            <div id="participantslimit">
+              <label class="label-form" for="password-ield">PARTICIPANTS LIMIT</label>
+              <input class="w-input input-form" id="email-field" type="tel" name="tel" data-name="tel" required="required">
+              <div class="separator-fields"></div>
+            </div>
+            
+            <div id="invite" style="display: none">
+              <label class="label-form" for="email-field">INVITE PARTICIPANTS</label>
+              		<div class="w-row" style="padding-top: 5%">
+	              		<div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+		              		<h2 class="grey-heading-title" align="center"><img src="images/vlad.png" style="width: 40%"></h2>
+		              	</div>
+			            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+				            <h2 class="grey-heading-title">Vlad Shalaev</h2>
+				        </div>
+				        <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3" style="padding-left: 5%">
+					        <a class="category-link-highlighted" href="#" id="invitebutton" onclick="invite()">INVITE</a>
+					    </div>
+					</div>
+              <div class="separator-fields"></div>
+            </div>
+			<div class="separator-button"></div>
+          		<div class="separator-button"></div><a class="action-button" href="#">Publish</a>
+		  		<div class="separator-button"></div>
+		  	</div>
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+    <div class="shadow-layer"></div>
+  </section>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script>
+	  function showhide() {
+
+    var chboxs = document.getElementsByName("checkbox");
+    var vis = "none";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "block";
+            break;
+        }
+    }
+    document.getElementById("invite").style.display = vis;
+}
+</script>
+  <script>
+	  function showhideparticipants() {
+
+    var chboxs = document.getElementsByName("checkbox");
+    var vis = "block";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "none";
+            break;
+        }
+    }
+    document.getElementById("participantslimit").style.display = vis;
+}
+</script>
+<script>
+function invite() {
+    document.getElementById("invitebutton").className = "category-link";
+    document.getElementById("invitebutton").text = "INVITED";
+}
+</script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

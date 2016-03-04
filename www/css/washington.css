@@ -332,6 +332,13 @@ a {
   background-size: 204px;
   background-repeat: no-repeat;
 }
+.logo-challenge {
+  height: 70px;
+  background-image: url('../images/challenge.png');
+  background-position: 50% 50%;
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
 .logo-profile.smaller {
   height: 97px;
   background-size: 100px;
