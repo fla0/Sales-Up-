@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Chat</title>
+  <title>Messages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -30,20 +30,18 @@
       <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
         <div class="w-container">
           <div class="wrapper-mask" data-ix="menu-mask"></div>
-          <div class="navbar-title">Chat</div>
-          <a class="w-inline-block navbar-button" href="messages.html" data-load="1">
-            <div class="navbar-button-icon icon ion-ios-arrow-thin-left"></div>
-          </a>
-          <a class="w-inline-block navbar-button right" href="settings.html" data-ix="search-box">
-            <div class="navbar-button-icon smaller icon ion-ios-gear-outline" data-load="1"></div>
+          <div class="navbar-title">Messages</div>
+          <a class="w-inline-block navbar-button" href="social.html" data-load="1">
+            <div class="navbar-button-icon icon ion-ios-close-empty"></div>
           </a>
         </div>
       </div>
+      <div class="separator-fields"></div>
       <div class="body">
-        <ul class="list list-chats">
+        <ul class="list">
           <li class="w-clearfix list-chat" data-ix="list-item">
             <div class="column-left chat">
-              <div class="image-message chat"><img src="images/128 (4).jpg">
+              <div class="image-message chat"><img src="images/128_2.jpg">
               </div>
             </div>
             <div class="w-clearfix column-right chat">
@@ -61,7 +59,7 @@
           </li>
           <li class="w-clearfix list-chat" data-ix="list-item">
             <div class="column-left chat">
-              <div class="image-message chat"><img src="images/128 (4).jpg">
+              <div class="image-message chat"><img src="images/128_2.jpg">
               </div>
             </div>
             <div class="w-clearfix column-right chat">
@@ -79,7 +77,7 @@
           </li>
           <li class="w-clearfix list-chat" data-ix="list-item">
             <div class="column-left chat">
-              <div class="image-message chat"><img src="images/128 (4).jpg">
+              <div class="image-message chat"><img src="images/128_2.jpg">
               </div>
             </div>
             <div class="w-clearfix column-right chat">
@@ -104,7 +102,7 @@
           </li>
           <li class="w-clearfix list-chat" data-ix="list-item">
             <div class="column-left chat">
-              <div class="image-message chat"><img src="images/128 (4).jpg">
+              <div class="image-message chat"><img src="images/128_2.jpg">
               </div>
             </div>
             <div class="w-clearfix column-right chat">
@@ -125,7 +123,7 @@
       <div class="input-chat-block">
         <div class="w-form">
           <form class="w-clearfix" id="wf-form-Send" name="wf-form-Send" data-name="Send" action="#">
-            <input class="w-input input-chat" id="chat-message" type="text" placeholder="Your message" name="email" data-name="Email" required="required">
+            <input class="w-input input-chat" id="chat-message" type="text" placeholder="Type your message" name="email" data-name="Email" required="required">
             <input class="w-button chat-button" type="submit" value="Send" data-wait="Please wait...">
           </form>
           <div class="w-form-done">
