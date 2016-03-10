@@ -507,7 +507,7 @@ a {
   position: relative;
   display: inline-block;
   margin-left: 31px;
-  float: right;
+  float: left;
 }
 .radios-container {
   padding-top: 9px;
